@@ -1,7 +1,7 @@
 # Dockerfile vars
 
 # ENV
-IMAGENAME=coriolis-data-aggregator
+IMAGENAME=lup-data-aggregator
 REPO=
 # IMAGEFULLNAME=${REPO}/${IMAGENAME}:${KUBECTL_VERSION}
 IMAGEFULLNAME=${IMAGENAME}:latest

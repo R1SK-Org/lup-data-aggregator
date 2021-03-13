@@ -1,4 +1,4 @@
-module CDA
+module LDA
   class Ships
     SHIP_FILES = Dir.glob('data/ships/**/*.json').select { |e| File.file? e }
 

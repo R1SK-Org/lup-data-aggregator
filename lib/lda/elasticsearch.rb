@@ -1,9 +1,9 @@
 require 'elasticsearch-ruby'
 
-module CDA
+module LDA
   class Elasticsearch
 
-    @client ||= Elasticsearch::Client.new url: ENV.fetch('CDA_ELASTICSEARCH_URL'), log: true
+    @client ||= Elasticsearch::Client.new url: ENV.fetch('LDA_ELASTICSEARCH_URL'), log: true
 
     class << self
 

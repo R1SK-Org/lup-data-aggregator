@@ -1,6 +1,6 @@
 require 'rubygems'
 require 'bundler/setup'
-Bundler.require(:default, ENV.fetch("CDA_ENV", "development"))
+Bundler.require(:default, ENV.fetch("LDA_ENV", "development"))
 
 require 'dotenv/load'
-require_relative 'lib/cda'
+require_relative 'lib/lda'

@@ -3,14 +3,14 @@ require 'logger'
 require 'forwardable'
 
 # Me likes having Logger.whatever, so no instancing elsewhere, only class methods.
-module CDA
+module LDA
   class Logger
 
-    if ENV.fetch("CDA_ENV") == "development"
+    if ENV.fetch("LDA_ENV") == "development"
       @log       = ::Logger.new(STDOUT)
       @log.level = ::Logger::DEBUG
     else
-      @log       = ::Logger.new('logs/cda.log')
+      @log       = ::Logger.new('logs/lda.log')
       @log.level = ::Logger::WARN
     end
 
